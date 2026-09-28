@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Haven - Home</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="header-left">
+            <!-- Menu Icon -->
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">TOY HAVEN</div>
+        </div>
+
+        <nav class="desktop-nav">
+            <a href="index.html" class="active">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="wishlist.html">WISHLIST</a>
+            <a href="cart.html">CART ( <span id="cart-count">0</span> )</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="wishlist.html">WISHLIST</a>
+        <a href="cart.html">CART</a>
+        <a href="support.html">SUPPORT</a>
+    </div>
+
+    <main>
+
+        <!-- ========== HERO BANNER ========== -->
+        <section class="hero">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="banner1.jpg" alt="Banner 1">
+                    <div class="slide-content">
+                        <h1>Welcome to Toy Haven</h1>
+                        <p>Discover the best toys for every child</p>
+                        <a href="products.html" class="shop-now-btn">SHOP NOW</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="banner2.jpg" alt="Banner 2">
+                    <div class="slide-content">
+                        <h1>Welcome to Toy Haven</h1>
+                        <p>New arrivals just for you</p>
+                        <a href="products.html" class="shop-now-btn">SHOP NOW</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="banner3.jpg" alt="Banner 3">
+                    <div class="slide-content">
+                        <h1>Welcome to Toy Haven</h1>
+                        <p>Fun starts here</p>
+                        <a href="products.html" class="shop-now-btn">SHOP NOW</a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="banner4.jpg" alt="Banner 4">
+                    <div class="slide-content">
+                        <h1>Welcome to Toy Haven</h1>
+                        <p>Play. Learn. Enjoy.</p>
+                        <a href="products.html" class="shop-now-btn">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrows -->
+            <button class="arrow prev" id="prev-btn">&#10094;</button>
+            <button class="arrow next" id="next-btn">&#10095;</button>
+
+            <!-- Dots -->
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </section>
+
+        <!-- ========== SHOP BY CATEGORY ========== -->
+        <section class="section">
+            <h2>SHOP BY CATEGORY</h2>
+            <div class="category-grid">
+                <a href="products.html" class="category-card">
+                    <img src="figurine.jpeg" alt="Figurine">
+                    <p>FIGURINE</p>
+                </a>
+                <a href="products.html" class="category-card">
+                    <img src="toys.jpeg" alt="Toys">
+                    <p>TOYS</p>
+                </a>
+                <a href="products.html" class="category-card">
+                    <img src="board-games.jpeg" alt="Games">
+                    <p>GAMES</p>
+                </a>
+                <a href="products.html" class="category-card">
+                    <img src="diecast.jpeg" alt="Diecast">
+                    <p>DIECAST</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ========== FEATURED PRODUCTS ========== -->
+        <section class="section">
+            <h2>FEATURED PRODUCTS</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="iron-man.jpeg" alt="Iron Man Figure">
+                    <p class="product-price">Iron Man Mark VI<br> <br> LKR 1500</p>
+                </div>
+                <div class="product-card">
+                    <img src="barbie.jpeg" alt="Barbie Doll">
+                    <p class="product-price">Barbie Dreamhouse<br> <br> LKR 2000</p>
+                </div>
+                <div class="product-card">
+                    <img src="monopoly.jpeg" alt="Monopoly Game">
+                    <p class="product-price">Monopoly Classic<br> <br>LKR 3000</p>
+                </div>
+                <div class="product-card">
+                    <img src="hotwheels.jpeg" alt="Hot Wheels Cars">
+                    <p class="product-price">Hot Wheels Ultimate Set<br> <br> LKR 5000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== NEWSLETTER ========== -->
+        <section class="newsletter">
+            <h2>JOIN OUR NEWSLETTER</h2>
+            <div class="newsletter-form">
+                <label for="email" class="sr-only">Email address</label>
+                <input type="email" id="email" name="email" placeholder="ENTER EMAIL">
+                <button id="subscribe-btn">SUBSCRIBE</button>
+            </div>
+            <p id="message"></p>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="wishlist.html">WISHLIST</a>
+            <a href="cart.html">CART</a>
+            <a href="support.html">SUPPORT</a>
+        </div>
+        <p class="copyright">&copy; 2026 Toy Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

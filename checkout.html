@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Toy Haven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkoutstyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button class="menu-icon" id="menu-icon" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="index.html" class="logo">TOY HAVEN</a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="wishlist.html">WISHLIST</a>
+            <a href="cart.html">CART ( <span id="cartCount">0</span> )</a>
+        </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="wishlist.html">WISHLIST</a>
+        <a href="cart.html">CART</a>
+        <a href="support.html">SUPPORT</a>
+    </div>
+
+    <main class="page">
+        <div class="container">
+            <p class="breadcrumb"><a href="index.html">HOME</a> &gt; <a href="cart.html">CART</a> &gt; CHECKOUT</p>
+            <h1 class="page-title">CHECKOUT</h1>
+            <p class="subtitle">COMPLETE YOUR ORDER BELOW</p>
+
+            <div class="checkout-layout">
+                <!-- LEFT: Customer Information -->
+                <section class="customer-info">
+                    <h2>CUSTOMER INFORMATION</h2>
+
+                    <div class="form-group">
+                        <label for="fullName">1. FULL NAME</label>
+                        <input type="text" id="fullName" placeholder="Enter Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">2. EMAIL ADDRESS</label>
+                        <input type="email" id="email" placeholder="Enter Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">3. DELIVERY ADDRESS</label>
+                        <textarea id="address" rows="3" placeholder="Enter Address" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>PAYMENT METHOD</label>
+
+                        <div class="payment-options">
+                        <label class="radio-label">
+                        <input type="radio" name="payment" value="card" checked>
+                         Credit / Debit card
+                        </label>
+
+                        <label class="radio-label">
+                        <input type="radio" name="payment" value="cod">
+                        Cash on Delivery
+                        </label>
+                        </div>
+                    </div>
+
+                    <div id="cardDetails">
+
+                        <div class="form-group">
+                            <label for="cardNumber" class="sr-only">Card number</label>
+                            <input type="text" id="cardNumber" placeholder="Card number">
+                        </div>
+
+                    <div class="card-row">
+                    <div>
+                        <label for="expDate" class="sr-only">Expiry date</label>
+                            <input type="text" id="expDate" placeholder="Exp date">
+                    </div>
+
+                    <div>
+                        <label for="cvv" class="sr-only">CVV</label>
+                        <input type="text" id="cvv" placeholder="CVV">
+                    </div>
+                </div>
+
+             </div>
+
+                    <button
+                        type="button"
+                        class="btn-place-order"
+                        id="placeOrderBtn">
+                        PLACE ORDER →
+                    </button>
+                </section>
+
+                <!-- RIGHT: Order Details -->
+                <aside class="order-details">
+                    <h2>ORDER DETAILS</h2>
+                    <div id="orderItems"></div>
+
+                    <div class="summary">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">LKR 0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery</span>
+                            <span id="delivery">LKR 200</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Discount</span>
+                            <span id="discount">LKR 0</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>TOTAL</span>
+                            <span id="total">LKR 0</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="wishlist.html">WISHLIST</a>
+            <a href="cart.html">CART</a>
+            <a href="support.html">SUPPORT</a>
+        </div>
+        <p class="copyright">© 2026 Toy Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="checkoutscript.js"></script>
+</body>
+</html>

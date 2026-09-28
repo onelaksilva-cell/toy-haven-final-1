@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Haven - Feedback & Support</title>
+
+    <!-- Google Fonts (same as Home) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="supportstyle.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.html" class="logo">TOY HAVEN</a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="wishlist.html">WISHLIST</a>
+            <a href="cart.html">CART (<span id="cartCount">0</span>)</a>
+            
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="wishlist.html">WISHLIST</a>
+        <a href="cart.html">CART</a>
+        <a href="support.html">SUPPORT</a>
+    </div>
+
+    <!-- ========== MAIN ========== -->
+    <main class="support-page">
+        <div class="support-header">
+            <h1>FEEDBACK & SUPPORT</h1>
+            <p class="subtitle">SEND YOUR FEEDBACK TO US!</p>
+        </div>
+
+        <div class="support-grid">
+            <!-- LEFT: Feedback Form -->
+            <section class="feedback-box">
+                <h2>FEEDBACK FORM</h2>
+                <form id="feedbackForm">
+
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Feedback</button>
+
+                </form>
+            </section>
+
+            <!-- RIGHT: FAQ -->
+            <section class="faq-box">
+                <h2>FAQ</h2>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        How do I place an order?
+                        <span>▼</span>
+                    </button>
+                    <div class="faq-content">
+                        Browse the Products page, click “Add to Cart”, then go to the Cart page and proceed to checkout.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        How can I track my order?
+                        <span>▼</span>
+                    </button>
+                    <div class="faq-content">
+                        After placing an order you will receive an order confirmation email with a tracking link.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        What payment methods are available?
+                        <span>▼</span>
+                    </button>
+                    <div class="faq-content">
+                        We currently accept Visa, MasterCard, and cash on delivery (selected areas).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        How do I add products to wishlist?
+                        <span>▼</span>
+                    </button>
+                    <div class="faq-content">
+                        On the Products page, click the “Add to Wishlist” button on any product. You can view them later on the Wishlist page.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="wishlist.html">WISHLIST</a>
+            <a href="cart.html">CART</a>
+            <a href="support.html">SUPPORT</a>
+        </div>
+        <p>© 2026 Toy Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="supportscript.js"></script>
+</body>
+</html>
